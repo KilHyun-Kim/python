@@ -155,7 +155,7 @@ print(x_count)
 # 평균 이상 개수 구하기
 # 여러개의 숫자를 입력 받아 평균을 구하고
 # 평균 이상의 숫자 개수 구하기
-
+'''
 num = list(map(int,input('num:').split()))
 
 avg = sum(num)/len(num)
@@ -169,5 +169,71 @@ for i in num:
 print(avg)  # 평균값
 print(check)# 평균보다 큰 숫자의 개수
 
+'''
 
 
+# 소수
+
+# 소수 판별하기
+'''
+n = int(input('n:'))
+
+check = True
+
+for i in range(2, n):
+    if n%i == 0:
+       check = False
+
+print(check)
+'''
+# 범위 내의 소수 구하기
+
+'''
+a = int(input('n:'))
+
+li=[]
+
+for i in range(2,a+1):
+    check = True
+    for j in range(2,i):
+        if i%j ==0:
+            check = False
+    if check:
+        li.append(i)
+print(li)
+'''
+
+# 수열
+
+# 등차수열
+# 앞 항에 일정한 수를 더해 만드는 수열
+'''
+first = int(input('첫 값을 입력하세요'))
+add = int(input('등차 값은 얼마인가요?'))
+last = int(input('몇 번째 항까지 구할 건가요?'))
+
+basis = first
+li = [first]
+for i in range(0,last+1):
+    basis = basis + add
+    li.append(basis)
+print(li)
+'''
+# 등비수열
+# 앞 항에 일정한 수를 곱해 만드는 수열
+
+
+# 피보나치 수열
+# 바로 앞의 두 개의 항을 더해 만드는 수열
+
+'''
+n = int(input('n:'))
+
+a = 1
+b = 1
+for i in range(n-2):
+    c = a + b         # for문 안쪽값을 바꿔줌으로써 추가 값을 바꿔줄 수 있다.
+    a = b
+    b = c
+print(b)
+'''
