@@ -237,3 +237,35 @@ for i in range(n-2):
     b = c
 print(b)
 '''
+
+# 별 찍기
+
+# 계단
+'''
+n = int(input('n:'))
+
+for i in range(n):
+    print(''*i,end='')    # 공백이 왜 출력이 안되나~?
+    print('*'*n)
+'''
+
+# 삼각형
+'''
+n = int(input('n='))
+
+for i in range(1,n+1):
+    print('*'*i)
+
+별 개수 바로 출력
+''' 
+'''
+n = int(input('n:'))
+
+for i in range(1,n+1):
+    print(''*(n-i),end='')
+    print('*'*i)
+
+공백후 개수 출력
+'''
+
+# 역 삼각형
