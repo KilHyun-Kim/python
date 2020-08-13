@@ -18,7 +18,7 @@ for i in range(len(li)):
 
 # 중간값을 기준으로 작고 큼을 비교함으로 탐색하는 방법
 
-
+'''
 li = [1,3,5,6,8,9,13,15,17,19]
 n = int(input('1,3,5,6,8,9,13,15,17,19'))
 
@@ -34,3 +34,4 @@ while s_index <= e_index:
     else:
         print(m_index)
         break
+'''
